@@ -1,3 +1,5 @@
+using Hack4Change.API;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,7 +17,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapGet("/hello", () =>
-    "Welcome to the Hack4Change Web Server")
+    MessageProvider.WelcomeMessage)
 .WithName("GetHello");
 
 app.Run();
