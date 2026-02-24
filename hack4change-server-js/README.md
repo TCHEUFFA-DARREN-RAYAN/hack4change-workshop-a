@@ -1,45 +1,34 @@
-# JS-Express Sample Application
+# Hack4Change Workshop Typescript Repository
+This is the sample server repository for the first Hack4Change workshop. Combined with one of the Hack4Change client applications, you can use this server as a basis to build your own full stack web application.
 
-A sample web server in Javascript.
+# Getting Started
+To start working with this server project, do the following:
 
-## Requirements
-- `yarn` or `npm` as a package manager
-- `nodejs` 
+- Download Node.js with npm from https://nodejs.org/en/download and follow the instructions to install it. This project was created using Node version 22.22.0, but should work with any recent version of Node.
+- From this directory, run the following command in a command line: `npm install`. This will install all of the project's dependencies.
+- Use the scripts listed below to run and test the client.
 
-## Setup Process
+# Scripts
+You can run the following commands from a command line in this directory:
 
-You should have `yarn` or `npm` installed, and an up to date `nodejs`. Any IDE you're comfortable with is fine. I think there are general suggestions if you're new to this.
+- `npm run dev` will run the Typescript compiler in watch mode, recompiling the server whenever changes are made and placing the compiled files into a `dist` folder.
+- `npm run build` will run the Typescript compiler once, placing the compiled files into a `dist` folder
+- `npm run start` will run the compiled server from the `dist` folder.
+- `npm run test` will run all tests for the application.
 
-Run `yarn` or `npm install` from the root directory to install your dependencies and you are ready to go. This is something most IDEs will also do for you.
+# Layout
+The base directory contains this readme, as well as the `tsconfig.json` file configuring the Typescript compile and the various package and lock files for managing dependencies.
 
-## Commands
+The rest of the files are in the `src` directory. Specifically:
+- The `index.ts` file contains a definition of the server's API.
+- The `bootstrap.ts` file is used to initiate the web server.
+- All project tests are in the `index.test.ts` file.
 
-### Dev server
+# Frameworks and Tools
+This application is built using the Typescript programming language. Documentation for the language and its features is available at https://www.typescriptlang.org/docs/handbook/intro.html.
 
-This will continuously transpile your code and tell you why it's not happy.
+The build process and dev server use the Vite build tool. If you want to adjust the build process, you can find more information on how to use the tool at https://vite.dev/guide/.
 
-`yarn dev` or `npm run dev`
+Unit test support is provided by the Vitest testing framework. For more information on how to write and run tests using this framework, see https://vitest.dev/guide/.
 
-### Tests
-
-This will watch your files for changes and rerun tests when it sees them
-
-`yarn test` or `npm run test`
-
-### Building
-
-This will compile your app into the `./dist` directory for deployment
-
-`yarn build` or `npm run build`
-
-### Running
-
-If you build, or have the dev server running, you will have the most recent version in `./dist` (if there are no errors). 
-
-You can then run the app with `yarn start` or `npm run start`
-
-From there, you should be able to connect to http://localhost:8081 and access your server.
-
-## Reference Material
-
-If you want to take a deeper dive into Express you can find its documentation here: https://expressjs.com/en/starter/hello-world.html
+Additional APIs for testing HTTP calls are provided by the supertest package, available at https://www.npmjs.com/package/supertest.
