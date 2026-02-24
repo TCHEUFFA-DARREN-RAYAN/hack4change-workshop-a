@@ -1,5 +1,5 @@
 # Hack4Change Workshop C# Repository
-This is the sample C# server repository for the first Hack4Change workshop. Combined with the Hack4Change client application, you can use this erver as a basis to build your own full stack web application.
+This is the sample C# server repository for the first Hack4Change workshop. Combined with the Hack4Change client application, you can use this server as a basis to build your own full stack web application.
 
 # Getting Started
 To start working with this client project, do the following:
