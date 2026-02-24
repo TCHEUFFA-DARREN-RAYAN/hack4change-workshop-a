@@ -10,4 +10,4 @@ This repository contains a web client and four server applications. In order to 
 - Follow the `README.md` instructions in the copied server directory to get your chosen server application running.
 - Using the instructions from the `README.md` files, launch both the server and client that you've selected.
 
-You should now be able to access the web client at `http://localhost:5173`, and the web client should be able to fetch data from your chosen server and display its welcome message as a header at the top of the page.
+You should now be able to access the web client at `http://localhost:5173`, and the web client should be able to fetch data from your chosen server and display its welcome message as a header at the top of the page. 
